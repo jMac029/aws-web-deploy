@@ -2,6 +2,10 @@ body {
   font-family: "Droid Sans", sans-serif;
   margin-right: 250px;
   margin-left: 250px;
+  background-image: url("./apollo8_earthrise.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
 }
 
 h1,
@@ -11,4 +15,5 @@ h4,
 h5,
 h6 {
   font-family: "Roboto Slab", serif;
+  color: white;
 }

@@ -10,14 +10,14 @@
   <link rel="stylesheet" href="./styles.css">
 
   <script type="text/javascript">
-    function disp() {
-      str1 = location.host;
-      console.log(str1);
-      document.getElementById("server-display").innerHTML = str1;
+    function displayHostname() {
+      hostname = location.host;
+      // console.log(hostname);
+      document.getElementById("server-display").innerHTML = hostname;
     };
 
     window.onload = function () {
-      disp();
+      displayHostname();
     };
 
   </script>
