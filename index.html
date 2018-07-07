@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>jmac aws web deploy</title>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <script type="text/javascript">
+    function disp() {
+      str1 = location.host;
+      console.log(str1);
+      document.getElementById("server-display").innerHTML = str1;
+    };
+
+    window.onload = function () {
+      disp();
+    };
+
+  </script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h1>Hello World!</h1>
+      <br>
+      <p>From:</p>
+      <h2 id="server-display"></h2>
+    </div>
+  </div>
+</body>
+
+</html>
