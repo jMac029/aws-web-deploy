@@ -12,7 +12,7 @@
   <!-- javascript with a little php functions for server hostname display -->
   <script type="text/javascript">
     function displayHostname() {
-      hostname = "<?php echo $_SERVER['SERVER_NAME']; ?>";
+      hostname = "<?php echo $_SERVER['SERVER_ADDR']; ?>";
       // console.log(hostname);
       document.getElementById("server-display").innerHTML = hostname;
     };
