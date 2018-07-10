@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./styles.css">
 
   <!-- javascript functions for server hostname display -->
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     function displayHostname() {
       hostname = location.host;
       // console.log(hostname);
@@ -21,6 +21,10 @@
       displayHostname();
     };
 
+  </script> -->
+  <script type="text/javascript">
+    var ip = "<?php echo $_SERVER['SERVER_ADDR']; ?>";
+    alert(ip);
   </script>
 
 </head>
