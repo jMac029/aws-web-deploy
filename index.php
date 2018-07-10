@@ -22,6 +22,7 @@
     };
 
   </script> -->
+  <!-- php script to display the server ip -->
   <script type="text/javascript">
     var ip = "<?php echo $_SERVER['SERVER_ADDR']; ?>";
     alert(ip);
@@ -32,14 +33,9 @@
 <body>
   <div class="wrapper">
     <div class="header">
-      <p>to:</p>
-      <h2>world</h2>
+      <h2>Hello world!</h2>
       <br>
-      <p>from:</p>
-      <h2 id="server-display"></h2>
-      <br>
-      <p>message:</p>
-      <h1>Hello!</h1>
+      <p>refresh the page to be alerted of which instance the load balancer is hitting</p>
       <br>
     </div>
   </div>
