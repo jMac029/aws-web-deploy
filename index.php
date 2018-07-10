@@ -9,10 +9,10 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./styles.css">
 
-  <!-- javascript functions for server hostname display -->
-  <!-- <script type="text/javascript">
+  <!-- javascript with a little php functions for server hostname display -->
+  <script type="text/javascript">
     function displayHostname() {
-      hostname = location.host;
+      hostname = "<?php echo $_SERVER['SERVER_ADDR']; ?>";
       // console.log(hostname);
       document.getElementById("server-display").innerHTML = hostname;
     };
@@ -21,11 +21,6 @@
       displayHostname();
     };
 
-  </script> -->
-  <!-- php script to display the server ip -->
-  <script type="text/javascript">
-    var ip = "<?php echo $_SERVER['SERVER_ADDR']; ?>";
-    alert(ip);
   </script>
 
 </head>
@@ -35,7 +30,11 @@
     <div class="header">
       <h2>Hello world!</h2>
       <br>
-      <p>refresh the page to be alerted of which instance the load balancer is hitting</p>
+      <p>from:</p>
+      <h2 id="server-display"></h2>
+      <br>
+      <p>message:</p>
+      <h1>Hello!</h1>
       <br>
     </div>
   </div>
