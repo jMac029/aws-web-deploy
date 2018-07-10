@@ -28,7 +28,8 @@
 <body>
   <div class="wrapper">
     <div class="header">
-      <h2>Hello world!</h2>
+      <p>to:</p>
+      <h2>World</h2>
       <br>
       <p>from:</p>
       <h2 id="server-display"></h2>
